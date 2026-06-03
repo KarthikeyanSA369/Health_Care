@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Health Prediction - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="title-section">
+        <h1>Smart Health Prediction</h1>
+        <p>Select a health module to begin your analysis</p>
+    </div>
+
+    <!-- Navigation / Selection Cards -->
+    <div class="dashboard-container">
+
+        <!-- Diabetes Selection -->
+        <a href="/diabetes" style="text-decoration: none; color: inherit;">
+            <div class="card"
+                style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="card-icon" style="font-size: 3rem; margin-bottom: 20px;">🩸</div>
+                <h2 style="margin-bottom: 15px;">Diabetes Prediction</h2>
+                <p style="color: var(--text-muted);">Analyze glucose, insulin, and other vitals to predict diabetes
+                    risk.</p>
+                <button class="btn-submit" style="margin-top: 20px;">Start Check</button>
+            </div>
+        </a>
+
+        <!-- Heart Selection -->
+        <a href="/heart" style="text-decoration: none; color: inherit;">
+            <div class="card"
+                style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="card-icon" style="font-size: 3rem; margin-bottom: 20px;">❤️</div>
+                <h2 style="margin-bottom: 15px;">Heart Disease</h2>
+                <p style="color: var(--text-muted);">Assess heart health using age, cholesterol levels, and blood
+                    pressure.</p>
+                <button class="btn-submit" style="margin-top: 20px; background-color: #e63946;">Start Check</button>
+            </div>
+        </a>
+
+        <!-- Obesity Selection -->
+        <a href="/obesity" style="text-decoration: none; color: inherit;">
+            <div class="card"
+                style="text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="card-icon" style="font-size: 3rem; margin-bottom: 20px;">⚖️</div>
+                <h2 style="margin-bottom: 15px;">Obesity Check</h2>
+                <p style="color: var(--text-muted);">Evaluate body composition and lifestyle factors.</p>
+                <button class="btn-submit" style="margin-top: 20px; background-color: var(--secondary-color);">Start
+                    Check</button>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Health Prediction System</p>
+    </footer>
+
+</body>
+
+</html>

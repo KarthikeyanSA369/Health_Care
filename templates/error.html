@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error - Smart Health Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        {% if error_message %}
+        <h2 style="color: #dc3545;">Oops! Something went wrong.</h2>
+        <p style="color: #333; font-size: 18px;">{{ error_message }}</p>
+        {% else %}
+        <h2 style="color: #dc3545;">Oops! An unknown error occurred.</h2>
+        {% endif %}
+        <button onclick="window.history.back()" class="btn-home">Go Back</button>
+    </div>
+</body>
+
+</html>

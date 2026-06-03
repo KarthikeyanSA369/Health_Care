@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="result-container">
+        <div class="title-section">
+            <h1>Analysis Complete</h1>
+            <p>Here is the prediction based on the data provided.</p>
+        </div>
+
+        <div class="result-value">
+            {{ prediction }}
+        </div>
+
+        <p style="color: #6c757d; margin-top: 10px;">
+            Please note: This is an AI-assisted prediction and should not replace professional medical advice.
+        </p>
+
+        <a href="/" class="btn-home">Back to Dashboard</a>
+    </div>
+
+</body>
+
+</html>
